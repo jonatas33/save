@@ -1,0 +1,53 @@
+section{
+    width: 1020px;
+    height: auto;
+    margin: 100px auto;
+}
+section label{
+    width: 175px;
+    padding: 20px 10px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+input:checked + label{
+    background-color: #e1e8ec;
+
+}
+input{
+    display: none;
+}
+#filtro_turma_a3:checked ~ #filtros .turma_b1,
+#filtro_turma_a3:checked ~ #filtros .turma_c2{
+    opacity: .0;
+
+}
+
+#filtro_turma_b1:checked ~ #filtros .turma_a3,
+#filtro_turma_b1:checked ~ #filtros .turma_c2{
+    opacity: .0;
+    
+}
+
+#filtro_turma_c2:checked ~ #filtros .turma_b1,
+#filtro_turma_c2:checked ~ #filtros .turma_a3{
+    opacity: .0;
+    
+}
+
+.input-wrapper {
+    position: relative;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+  }
